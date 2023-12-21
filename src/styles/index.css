@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  font-size: clamp(40%, 1% + 2rem, 62.5%);
+}
+
+body {
+  background: url(../../assets/img/mountains-universe-1.png) no-repeat center center fixed;
+  background-size: cover;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav ul {
+  display: flex;
+  padding: 4rem 71rem 4rem 7rem;
+  align-items: center;
+  gap: 3.2rem;
+  list-style: none;
+  
+}
+
+nav a .home {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 2.4rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+nav a .home:hover {
+  text-decoration: underline;
+}
+
+nav a {
+  color: #C4C4CC;
+  text-decoration: none;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+nav a .universe:hover,
+nav a .exploration:hover {
+  text-decoration: underline;
+  color: #FFF;
+  cursor: pointer;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  height: 70vh;
+  place-content: center;
+}
+
+main h1 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+main button {
+  margin-top: 2.4rem;
+  padding: 1.2rem 3.2rem;
+  background: none;
+  border-radius: .5rem;
+  border: .2rem solid #FFF;
+  color: #FFF;
+  cursor: pointer;
+}
+
+main button:hover {
+  background: #FFF;
+  color: #02799D;
+}
