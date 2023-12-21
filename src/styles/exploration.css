@@ -23,6 +23,14 @@ nav ul {
   list-style: none;
 }
 
+nav a .home {
+  color: #C4C4CC;
+  text-decoration: none;
+  font-size: 2.4rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
 nav a .exploration {
   color: #FFF;
   text-decoration: none;
@@ -38,19 +46,21 @@ nav a {
   font-weight: 700;
 }
 
-nav a:hover {
+nav a .home:hover {
   color: #FFF;
 }
 
 main {
   display: flex;
   flex-direction: column;
-  height: 70vh;
-  place-content: center;
-  margin: 12rem 0 0 10rem;
+  align-items: flex-start;
+  height: 50vh;
+  margin: 6rem 0 0 10rem;
 }
 
 main h1 {
+  display: flex;
+  align-items: start;
   font-size: 4.8rem;
   font-weight: 700;
 }
