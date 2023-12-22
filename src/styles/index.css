@@ -53,7 +53,7 @@ nav a .exploration:hover {
 main {
   display: grid;
   place-items: center;
-  height: 70vh;
+  height: 60vh;
   place-content: center;
 }
 
@@ -76,4 +76,18 @@ main button {
 main button:hover {
   background: #FFF;
   color: #02799D;
+}
+
+footer p {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 1rem;
+  color: aliceblue;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
 }

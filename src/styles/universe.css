@@ -76,3 +76,21 @@ main p {
   line-height: 2.8rem;
   margin-right: 63rem;
 }
+
+footer {
+  margin-right: 4rem;
+}
+
+footer p {
+  font-size: 1.4rem;
+  text-align: end;
+  margin-top: 1rem;
+  color: aliceblue;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content:end ;
+  margin-top: 2rem;
+  gap: 1rem;
+}
