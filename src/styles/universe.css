@@ -8,6 +8,13 @@
   font-size: clamp(40%, 1% + 2rem, 62.5%);
 }
 
+body {
+  background: url(../../assets/img/mountains-universe-2.png) no-repeat center center fixed;
+  background-size: cover;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+}
+
 nav ul {
   display: flex;
   padding: 4rem 71rem 4rem 7rem;
@@ -43,12 +50,7 @@ nav a .home:hover {
   color: #FFF;
 }
 
-body {
-  background: url(../../assets/img/mountains-universe-2.png) no-repeat center center fixed;
-  background-size: cover;
-  color: #FFF;
-  font-family: 'Roboto', sans-serif;
-}
+
 
 main {
   display: flex;

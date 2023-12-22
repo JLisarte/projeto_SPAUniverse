@@ -6,20 +6,21 @@ export class Router {
   }
 
   route(event) {
-    event = event || window.event
     event.preventDefault()
 
-    window.history.pushState({}, "", event.target.href)
+    const target = event.target || event.srcElement
+    const route = target.getAttribute("href") 
 
-    this.handle()
-    console.log(event.target.href)
+    window.history.pushState({}, "", route)
+
+    this.handle(route) 
   }
 
-  handle() {
-    const { pathname } = window.location
-    const route = this.routes[pathname] || this.routes[404]
+  handle(route) {
+    const validRoute = route || window.location.pathname
+    const selectedRoute = this.routes[validRoute] || this.routes[404]
 
-    fetch(route)
+    fetch(selectedRoute)
       .then((data) => data.text())
       .then((html) => {
         document.querySelector("#app").innerHTML = html
