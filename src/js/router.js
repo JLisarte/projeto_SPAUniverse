@@ -14,10 +14,11 @@ export class Router {
     window.history.pushState({}, "", route)
 
     this.handle(route) 
+    
   }
 
   handle(route) {
-    const validRoute = route || window.location.pathname
+    const validRoute = route
     const selectedRoute = this.routes[validRoute] || this.routes[404]
 
     fetch(selectedRoute)
@@ -26,4 +27,5 @@ export class Router {
         document.querySelector("#app").innerHTML = html
       })
   }
+
 }
